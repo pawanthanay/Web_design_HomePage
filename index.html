@@ -14,43 +14,51 @@
     <title>Design Landing Page</title>
   </head>
   <body>
-    <div class="main-div">  
-      <nav>
-        <img src="./images/logo.svg" alt="logo" />
-        <div class="nav-items">
-          <h5 class="nav-item">HOME</h5>
-          <h5 class="nav-item">ABOUT</h5>
-          <h5 class="nav-item">HISTORY</h5>
-          <h5 class="nav-item">BLOG</h5>
-          <h5 class="nav-item">CONTACT</h5>
-        </div>
-        <button class="signin-btn">SIGN IN</button>
+    <header>
+      <nav class=" container flex flex-jc-sb flex-ai-c">
+          <a href="/" class="header__logo">
+              <img src="images/logo.svg" alt="logo">
+          </a>
+
+          <a href="#" class="header__menu hide-for-desktop">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+
+          <div class="header__links hide-for-mobile">
+              <a href="#" class="active">Home</a>
+              <a href="#">About</a>
+              <a href="#">History</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact</a>
+              
+          </div>
+
+          <a href="#" class="button header__cta hide-for-mobile">Sign in</a>
       </nav>
-      <div class="intro-section">
-        <div class="left-section">
-          <h1>Web Design</h1>
-          <h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam, quidem.
-          </h4>
-          <button class="learn-more-btn">LEARN MORE</button>
-        </div>
-        <div class="imgs-div">
+  </header>
 
-          <img src="./images/backcover.svg" alt="bgc" class="background">
+  <div>
+      <img src="images/backcover.svg" alt="" class="background">
+  </div>
+  <section class="hero">
 
-          <img src="./images/vector.svg" alt="vector-img" class="vector-img" />
+      <div class="container">
+          
+          <div class="hero__image3"></div>
+          <div class="hero__text3">
+              <h1>Web design</h1>
+              <p> 
+                  Contact Niagahoster's customer success agent at any time when there is a
+                  problem with your website. No need to wait long. your problem will be
+                  resolved quickly and in real-time via intercom's live-chat. 
+              </p>
+              <a href="#" class="button2 hero__cta2">Learn More</a>
+          </div>
 
-          <img
-            src="./images/vector-dot.svg"
-            alt="vector-dot"
-            class="vector-dot"
-          />
-
-          <img src="./images/intro-img.svg" alt="intro-img" class="intro-img" />
-        </div>
       </div>
-    </div>
+
+  </section>
   </body>
 </html>
